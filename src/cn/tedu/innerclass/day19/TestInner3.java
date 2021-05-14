@@ -1,6 +1,7 @@
 package cn.tedu.innerclass.day19;
 //本类用于测试成员内部类被static修饰后的效果
 public class TestInner3 {
+    final int k;
     public static void main(String[] args) {
         //按照之前的方式,创建内部类对象调用play()
         //Outer3.Inner3 in3 = new Outer3().new Inner3();
@@ -17,6 +18,14 @@ public class TestInner3 {
         Outer3.Inner3.play2();
 
     }
+
+    @Test
+    public void teach(){
+        k=4;
+
+        System.out.println(k);
+    }
+
 }
 //1.创建外部类
 class Outer3{
